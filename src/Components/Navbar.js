@@ -17,7 +17,7 @@ const Navbar = () => {
           alt="Porsche Logo"
           className="logo"
         />
-        <h1 className="site-title">Porsche</h1>
+        <h1 className="site-title">ARSHI'S Porsche</h1>
       </div>
 
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>

@@ -16,8 +16,8 @@ const Home = () => {
 
   return (
     <div className="page-container home">
-      <h1>Welcome to Porsche</h1>
-      <p>Experience the legacy of German engineering and luxury with Porsche.</p>
+      <h1>Porsche</h1>
+      <p>Your porsche journey starts now.</p>
 
       {/* 🚗 Image Slider */}
       <div className="slider-container">
