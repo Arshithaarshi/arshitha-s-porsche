@@ -5,10 +5,15 @@
     background-color: #0f081fd1;
     color:white ;
     font-size: 20px;
-    padding: 20px ;
+    padding: 40px ;
     position: sticky;
     top: 0;
     z-index: 100;
+  }
+  .site-title{
+    letter-spacing: 1;
+    line-height: 10px;
+   
   }
   
   .logo-container {
@@ -35,6 +40,7 @@
   .nav-links a {
     color: rgba(255, 255, 255, 0.741);
     text-decoration: none;
+    
     font-weight: 500;
   }
   
@@ -69,6 +75,7 @@
       width: 100%;
       text-align: center;
       display: none;
+      
     }
   
     .nav-links.open {

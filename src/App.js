@@ -5,6 +5,9 @@ import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
 import Models from './Pages/Models';
 import About from './Pages/About';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
 
 function App() {
   return (
@@ -14,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/models" element={<Models />} />
         <Route path="/about" element={<About />} />
+       
       </Routes>
     </Router>
   );

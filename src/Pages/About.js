@@ -31,7 +31,7 @@ const About = () => {
       {/* Section 1: Background image left + Title + paragraph */}
       <div className="section bg-left">
         <div className="bg-image">
-          <img src="https://images-porsche.imgix.net/-/media/8F641E0AAC794543850E785094088B5E_102464B1332B4534B44AA6C50263B526_taycan-4-black-edition-front-mobile?fp-x=0.5&fp-y=0.5&w=999&ar=1%3A1&q=45&dpr=2&crop=focalpoint&auto=format" alt="Porsche image" />
+          <img src="https://images-porsche.imgix.net/-/media/8F641E0AAC794543850E785094088B5E_102464B1332B4534B44AA6C50263B526_taycan-4-black-edition-front-mobile?fp-x=0.5&fp-y=0.5&w=999&ar=1%3A1&q=45&dpr=2&crop=focalpoint&auto=format" alt="Porsche" />
         </div>
         <div className="text-block">
           <h1>About Porsche</h1>
@@ -62,6 +62,41 @@ const About = () => {
           <img src="https://t4.ftcdn.net/jpg/04/42/10/55/360_F_442105555_vUntBOK5N1jXzCOWmBykoebqFtlVXRjC.jpg" alt="Speed visual" />
         </div>
       </div>
+
+
+     
+
+
+
+
+      <main>
+        
+    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+    <div class="card-content">
+      <div class="row">
+        <div class="status">
+          Porsche
+        </div>
+        <div class="logo">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrsDN4CdYzmxGhcrZzhpNFYdGfFesb0M5nCSXPGYDGt3cLH3hMlRFPQVevdyTLNyglGqII6XySeAm8X1RwPyabrpnGBAmNxYX27rFbUVMPsfGZEQ4jYqY0c-64_wsm8Jh9pKJhRBTbYQDdfMfRQyD8Piqky_W2JHEPGxCRXcYcCE6YrBECAKJehJ0_/s1600/logo.png" alt=""/>
+        </div>
+      </div>
+      <div class="chip">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFzeQ0hz39haiHkhSOKnHJCG3v6AynORgBKrj0Zf2FTYMvjAsDAxzqIFZ8DYXbyq_-u_kuZcgg5nRpXxVGp18K15NiCGvVwTv-8QUGdZwJS3sSlhRpqEpZ3RHP7vQCIoKYnd6UFEAzxrhFPR5byjFFR6ld7gWvNCD7g5LF3Y6uhJvgY1_hw8qBCqO6/s1600/chip.png" alt=""/>
+      </div>
+      <div class="number">1234 5678 9012 3456</div>
+      <div class="name">arshi's credit</div>
+      <div class="row">
+        <div class="from">09/21</div>
+        <div class="from">11/25</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+
 
       {/* Section 4: Another gallery */}
       <div className="gallery‑simple">

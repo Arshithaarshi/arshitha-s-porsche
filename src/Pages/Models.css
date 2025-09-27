@@ -1,0 +1,95 @@
+
+
+.page-containerss {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* full screen height */
+    overflow: hidden;
+  }
+  
+  
+  .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+       
+  }
+  
+  
+  
+  
+
+  .overlayss {
+    position: absolute;       /* sit above the video */
+    top: 50%;                 /* push to vertical middle */
+    left: 50%;                /* push to horizontal middle */
+    transform: translate(-50%, -50%); /* perfect centering */
+    z-index: 1;               /* above the video */
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    padding: 20px;
+  }
+
+  
+  .overlayss h1 {
+    font-size: 3rem;                /* adjust size as needed */
+               /* normal weight like "Company philosophy." */
+    color: #fff;                    /* white text (since it’s on video) */
+    text-transform: none;           /* remove uppercase */
+    letter-spacing: -0.5px;         /* subtle spacing for modern look */
+    line-height: 1.2;
+    font-family: "Porsche Next", "Helvetica Neue", Arial, sans-serif; 
+    margin-bottom: 20px;
+    text-shadow: none;              /* remove heavy shadow */
+  }
+  
+  .overlayss ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  
+  .overlayss li {
+    margin: 8px 0;
+  }
+  
+  .fuel-info {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+  
+  
+
+  .newtext{
+    font-size: small;
+  }
+  
+  /* Button Style */
+.approved-btn {
+  background: rgba(255, 255, 255, 0.809);
+  color: #0d0d0d;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.approved-btn:hover {
+  background: #d5001c68; /* Porsche Red */
+  color: white;
+} 
+
+  
+ 
+  
+ 
