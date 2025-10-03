@@ -25,6 +25,7 @@ const HeroVideo = () => {
         loop
       />
 
+
       {/* Top Left */}
       <div className="top-left">
         <h3>Porsche<br />Motorsport</h3>
@@ -32,7 +33,7 @@ const HeroVideo = () => {
 
       {/* Top Right */}
       <div className="top-right">
-        <a href="#">INT ▾</a>
+        <a href="/">INT ▾</a>
       </div>
 
       {/* Bottom Left */}

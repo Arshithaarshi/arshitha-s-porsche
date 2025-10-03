@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './About.css';
 import ImageSlider from '../Components/ImageSlider';
 import HeroVideo from "../Components/HeroVideo";
+import Championship from '../Components/Championship';
 
 const carData = [
   { name: 'Porsche 911 Turbo S', detail: '0‑100 km/h in 2.8s', img: 'https://www.stratstone.com/-/media/stratstone/porsche/car-models/inline-images/911/porsche-911-turbo-720x405px.ashx' },
@@ -31,6 +32,7 @@ const About = () => {
   return (
     <div className="about-container">
         <HeroVideo/>
+        <Championship/>
       {/* Section 1: Background image left + Title + paragraph */}
       <div className="section bg-left">
         <div className="bg-image">

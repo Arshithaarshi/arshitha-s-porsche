@@ -29,9 +29,8 @@
   
   .explore-btn {
     background: #000;
-    color: #fff;
     border: none;
-    padding: 8px 16px;
+     padding: 8px 16px;
     margin: 1rem 0;
     font-weight: 600;
     cursor: pointer;
@@ -40,9 +39,23 @@
    gap: 8px;
   }
 
-  .explore-btn:hover{
-    background-color: rgb(148, 21, 21);
+
+  .explore-btn h2{
+    color:black;
+    padding:3px;
+    margin:0;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+   gap: 8px;
+
   }
+
+  .explore-btn h2:hover{
+   color: rgb(156, 25, 25);
+  }
+
   
   .build-link {
     margin-top: 0.5rem;

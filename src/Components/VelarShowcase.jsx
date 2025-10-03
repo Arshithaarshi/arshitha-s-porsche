@@ -21,7 +21,7 @@ const VelarShowcase = () => {
         <h1>MACAN TURBO LAUNCH</h1>
         <p>Desirable by design.</p>
         <button className="explore-btn">
-          <span>→</span> EXPLORE
+          <h2>→ Explore</h2>
         </button>
         <a href="/" className="build-link">
           → BUILD YOUR OWN
@@ -47,11 +47,10 @@ const VelarShowcase = () => {
 
 
         <div className="video-wrapper">
-          <video
-            ref={videoRef}
-            src="/video.mp4"   // 👈 your video from public folder
-            muted
-          />
+          <video ref={videoRef} autoPlay loop muted playsInline>
+            <source src="/video.mp4" type="video/mp4" />
+           </video>
+
           <button className="play-btn" onClick={togglePlay}>
             {isPlaying ? "❚❚" : "►"}
           </button>
