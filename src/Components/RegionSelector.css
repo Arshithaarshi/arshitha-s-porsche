@@ -1,0 +1,101 @@
+/* Container */
+.region-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+.porsche-text {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;   /* adjust to match thickness */
+  letter-spacing: 3px; /* Porsche wordmark has wide spacing */
+  text-transform: uppercase;
+  font-size: 48px; /* adjust as needed */
+}
+
+  
+  /* Logo */
+  .logo img {
+    height: 40px;
+    margin-bottom: 30px;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  /* Search */
+  .search-box {
+    position: relative;
+    width: 320px;
+    margin-bottom: 25px;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 10px 35px 10px 12px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+  
+  .search-box input:focus {
+    outline: none;
+    border-color: #000;
+  }
+  
+  .search-box .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Region List */
+  .region-list {
+    width: 320px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+  }
+  
+  .region-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+  }
+  
+  .region-item:hover {
+    background: #f7f7f7;
+  }
+  
+  /* Last item without border */
+  .region-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Chevron */
+  .chevron {
+    font-size: 12px;
+    transition: transform 0.3s;
+  }
+  
+  .chevron.rotate {
+    transform: rotate(180deg);
+  }
+  

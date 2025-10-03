@@ -14,7 +14,7 @@ body, html {
 
 
 .home {
-    background: rgba(12, 0, 0, 0.916);
+    background: #000;
     min-height: 100vh;
     padding: 20px;
     width: 100%;
@@ -78,15 +78,7 @@ body, html {
   }
   
 
-  /* 👣 Footer */
-  .footer {
-    margin-top: 50px;
-    padding: 20px 10px;
-    background-color: #222;
-    color: white;
-    font-size: 0.9rem;
-    border-radius: 10px;
-  }
+ 
   /* src/Pages/Page.css */
 
 

@@ -1,0 +1,93 @@
+.auto-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .auto-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeEffect 0.4s ease-in-out;
+  }
+  
+  /* Center overlay */
+  .slider-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .slider-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+  }
+  
+  .slider-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  }
+  
+  /* Buttons */
+  .btn-group {
+    display: flex;
+    flex-direction: column; /* stack vertically like in screenshot */
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 320px; /* fixed width for consistent look */
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px; /* slight rounding, not pill */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Black primary button */
+  .configure-btn {
+    background: #ece6e67d;
+    color: #fff;
+    border: 2px solid #000;
+  }
+  
+  .configure-btn:hover {
+    background: #222;
+    border-color: #222;
+  }
+  
+  /* Gray outlined secondary button */
+  .find-btn {
+    background: #e5e5e5;
+    color: #111;
+    border: 2px solid #161515;
+  }
+  
+  .find-btn:hover {
+    background: #d5d5d5;
+    border-color: #333;
+  }
+  
+  
+  /* Faster fade */
+  @keyframes fadeEffect {
+    from {
+      opacity: 0.3;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  

@@ -1,39 +1,44 @@
 import React from "react";
 import "./Models.css";
+import AnimatedStats from "../Components/AnimatedStats";
+import ChargingSection from "../Components/ChargingSection";
 
 
 const Models = () => {
   return (
     <div className="page-containers">
-      <video className="background-videos" autoPlay loop muted playsInline>
-        <source src="/cayenn.mp4" type="" />
-      </video>
+        <video className="background-videos" autoPlay loop muted playsInline>
+    <source src="/cayenn.mp4" type="video/mp4" />
+  </video>
 
-      <div className="overlayss">
-        <h1>Cayenne Red Edition</h1>
-        <div className="fuel-info">
-  Fuel consumption (weighted) combined (model range): 4.4 – 4.1 l/100 km, 
-  Electric energy consumption (weighted) combined (model range): 31.4 – 19.3 kWh/100 km, 
-  CO₂-emissions (weighted) combined (model range): 101 – 93 g/km, 
-  Fuel consumption (sustaining) combined (model range): 10.5 – 10.0 l/100 km
-</div>
+  <div className="sustainable-content">
+    <h1>Cayenne Red Edition</h1>
+    <p>
+      We're building a world powered by solar energy, running on batteries
+      and transported by electric vehicles. Explore the most recent impact
+      of our products, people and supply chain.
+    </p>
+    <button className="explore-btn">Explore Impact</button>
+  </div>
+
+
+
+
+        
 <br></br>
-<br></br>
 
-   <div className="newtext">
-         <h1>111 - point check.</h1>
-         <div className="newpara">
-         We go the extra mile for our Porsche Approved Pre-Owned Cars. Our technicians meticulously check the 
-         condition and functionality of the entire vehicle as well as the complete vehicle documentation and history
-          based on a 111-point checklist. This creates more than just proof of
-          quality, it creates trust and lasting values.
-         </div>
-         <br></br>
-         <button className="approved-btn">Read more</button>
-   </div>
+     
 
-      </div>
+ 
+     <ChargingSection />
+      
+      <div style={{ background: "#000", minHeight: "100vh", padding: 20 }}>
+      <AnimatedStats />
     </div>
+
+    
+    </div>
+    
  
 
   );

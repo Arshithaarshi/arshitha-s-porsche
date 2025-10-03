@@ -1,0 +1,113 @@
+.velar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 3rem 5%;
+    gap: 3rem;
+  }
+  
+  .velar-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .velar-text h1 {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .velar-text p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .explore-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin: 1rem 0;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+   gap: 8px;
+  }
+
+  .explore-btn:hover{
+    background-color: rgb(148, 21, 21);
+  }
+  
+  .build-link {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .build-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Right side grid */
+  .velar-grid {
+    flex: 1.5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .velar-grid img,
+  .velar-grid video {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  /* Video wrapper with play button */
+  .video-wrapper {
+    position: relative;
+  }
+  
+  .play-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .velar-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .velar-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .velar-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

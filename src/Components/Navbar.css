@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f081fd1;
+    background-color: #04010de9;
     color:white ;
     font-size: 20px;
     padding: 40px ;
@@ -38,16 +38,30 @@
   }
   
   .nav-links a {
-    color: rgba(255, 255, 255, 0.741);
+    color: rgba(173, 26, 26, 0.741);
     text-decoration: none;
-    
-    font-weight: 500;
+    font-weight: 700;
   }
   
   .nav-links a:hover {
-    color: white;
+    color:#949ba3;
+
   }
   
+  /* .nav-links a li::after{
+    content: '';
+    height: 3px;
+    background-color: rgb(193, 34, 34);
+    position :absolute;
+    left: 0;
+    bottom: 10px;
+    transition: 0.5s;
+  }
+  
+  .nav-links a li:hover::after{
+    width: 100%;
+  } */
+
   .hamburger {
     display: none;
     flex-direction: column;

@@ -1,0 +1,133 @@
+/* Container */
+.charging-container {
+    text-align: center;
+    padding: 80px 20px;
+    background: #ffffff;
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* Title */
+  .charging-title {
+    font-size: 2.2rem;
+    font-weight: 200;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+  }
+  
+  /* Subtitle */
+  .charging-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+  }
+  
+  /* Button */
+  .charge-btn {
+    background: transparent;
+    border: 1.5px solid black;
+    padding: 10px 28px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 60px;
+  }
+  
+  .charge-btn:hover {
+    background: black;
+    color: #fff;
+  }
+  
+  /* Card Layout */
+  .charging-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 12px;
+    background-color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Card */
+  .card {
+    margin: 0px;
+    padding: 10px;
+    flex: 1;
+    max-width: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fffffffa;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .card p{
+    line-height: 1.4;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+
+  .card img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    display: block;
+    background-color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+
+  .card-text {
+    padding: 18px;
+    text-align: left;
+  }
+
+  .card h3{
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .card-text h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  
+  .card-text p {
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.5;
+  
+    padding-bottom: 55px;
+  }
+  
+  .card-text a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .card-text a:hover {
+    opacity: 0.7;
+  }
+  
+
+  @media (max-width: 900px) {
+    .charging-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 90%;
+    }
+  }
+  
+  

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './About.css';
+import ImageSlider from '../Components/ImageSlider';
+import HeroVideo from "../Components/HeroVideo";
 
 const carData = [
   { name: 'Porsche 911 Turbo S', detail: '0‑100 km/h in 2.8s', img: 'https://www.stratstone.com/-/media/stratstone/porsche/car-models/inline-images/911/porsche-911-turbo-720x405px.ashx' },
@@ -28,6 +30,7 @@ const About = () => {
 
   return (
     <div className="about-container">
+        <HeroVideo/>
       {/* Section 1: Background image left + Title + paragraph */}
       <div className="section bg-left">
         <div className="bg-image">
@@ -62,7 +65,7 @@ const About = () => {
           <img src="https://t4.ftcdn.net/jpg/04/42/10/55/360_F_442105555_vUntBOK5N1jXzCOWmBykoebqFtlVXRjC.jpg" alt="Speed visual" />
         </div>
       </div>
-
+    
 
      
 
@@ -94,7 +97,20 @@ const About = () => {
   </div>
 </main>
 
-
+    
+      <div className="Imgslid" style={{ display: "flex", gap: "20px" }}>
+          <ImageSlider
+            beforeImage="https://www.stratstone.com/-/media/stratstone/porsche/car-models/inline-images/911/porsche-911-turbo-720x405px.ashx"
+            afterImage="https://images-porsche.imgix.net/-/media/92C77A76FFFE4CB6AC4808FC077B9F4B_8B0BB52914224A8F81898F68A30289D3_taycan-4s?w=1759&q=85&auto=format"
+          />
+    
+          <br></br>
+    
+          <ImageSlider
+            beforeImage="https://www.autopediame.com/storage/images/Porsche/zzzzzzz%20por%C5%9F.jpg"
+            afterImage="https://www.edmunds.com/assets/m/cs/blt1b3fe5ecec2e77b9/6712911a1c3e18e235603dcf/2025_Porsche_Panamera_GTS_011_1600.jpg"
+          />
+        </div>
 
 
 

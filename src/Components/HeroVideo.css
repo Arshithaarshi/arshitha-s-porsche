@@ -1,0 +1,64 @@
+.hero-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Top Left */
+  .top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  /* Top Right */
+  .top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .top-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* Bottom Left */
+  .bottom-left {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  /* Bottom Right */
+  .bottom-right {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+  }
+  
+  .bottom-right button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  

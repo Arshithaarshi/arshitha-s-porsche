@@ -1,12 +1,13 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react';
 import './ImageSlider.css';
 
-const ImageSlider = ({ beforeImage, afterImage, width = 600, height = 400 }) => {
+const ImageSlider = ({ beforeImage, afterImage }) => {
   const sliderRef = useRef(null);
   const beforeRef = useRef(null);
   const containerRef = useRef(null);
 
   const [sliderWidth, setSliderWidth] = useState(0);
+  const [containerDimensions, setContainerDimensions] = useState({ width: 600, height: 400 });
 
   const updateSliderPosition = useCallback((e) => {
     const containerRect = containerRef.current.getBoundingClientRect();
@@ -29,8 +30,19 @@ const ImageSlider = ({ beforeImage, afterImage, width = 600, height = 400 }) => 
   }, [updateSliderPosition]);
 
   useEffect(() => {
-    const containerWidth = containerRef.current.offsetWidth;
-    setSliderWidth(containerWidth / 2);
+    const updateDimensions = () => {
+      const containerWidth = containerRef.current.offsetWidth;
+      const containerHeight = containerRef.current.offsetHeight;
+      setContainerDimensions({ width: containerWidth, height: containerHeight });
+      setSliderWidth(containerWidth / 2);
+    };
+
+    updateDimensions();
+    window.addEventListener('resize', updateDimensions);
+
+    return () => {
+      window.removeEventListener('resize', updateDimensions);
+    };
   }, []);
 
   useEffect(() => {
@@ -46,16 +58,17 @@ const ImageSlider = ({ beforeImage, afterImage, width = 600, height = 400 }) => 
         className="container"
         ref={containerRef}
         style={{
-            position: 'relative',
-            overflow: 'hidden',
-            width: `${width}px`,
-            height: `${height}px`
-          }}
+          position: 'relative',
+          overflow: 'hidden',
+          width: '100%',
+          height: 'auto',
+          aspectRatio: '3 / 2', // Maintain aspect ratio
+        }}
       >
         {/* AFTER IMAGE */}
-        <div className="img-afterWrap"style={{ position: 'absolute', inset: 0 }} >
+        <div className="img-afterWrap" style={{ position: 'absolute', inset: 0 }}>
           <img
-            style={{ width: '100%', height: '100%', objectFit: 'cover',opacity:'1' }}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: '1' }}
             src={afterImage}
             alt="After"
           />
@@ -68,7 +81,12 @@ const ImageSlider = ({ beforeImage, afterImage, width = 600, height = 400 }) => 
           style={{ position: 'absolute', top: 0, left: 0, height: '100%', overflow: 'hidden' }}
         >
           <img
-            style={{ width: `${width}px`, height: `${height}px`, objectFit: 'cover' ,  opacity:'1'}}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              opacity: '1',
+            }}
             src={beforeImage}
             alt="Before"
           />
