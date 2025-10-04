@@ -1,5 +1,7 @@
 import React from "react";
 import "./Configure.css";
+import Footer from "../Components/Footer";
+
 
 const ConfigurePage = () => {
   const models = [
@@ -65,8 +67,11 @@ const ConfigurePage = () => {
             <button className="configure-btn">Configure your {model.name}</button>
           </div>
         ))}
+      
       </div>
+       <Footer/>
     </div>
+
   );
 };
 

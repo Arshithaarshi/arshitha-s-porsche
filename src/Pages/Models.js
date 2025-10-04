@@ -3,7 +3,7 @@ import "./Models.css";
 import AnimatedStats from "../Components/AnimatedStats";
 import ChargingSection from "../Components/ChargingSection";
 import Footer from "../Components/Footer";
-
+import MachineSection from "../Components/MachineSection";
 
 const Models = () => {
   return (
@@ -35,6 +35,8 @@ const Models = () => {
       
       <div style={{ background: "#000", minHeight: "100vh", padding: 20 }}>
       <AnimatedStats />
+
+      <MachineSection />
 
 
       <Footer/>

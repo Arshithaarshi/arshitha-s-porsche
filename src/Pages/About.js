@@ -3,6 +3,8 @@ import './About.css';
 import ImageSlider from '../Components/ImageSlider';
 import HeroVideo from "../Components/HeroVideo";
 import Championship from '../Components/Championship';
+import Footer from "../Components/Footer";
+
 
 const carData = [
   { name: 'Porsche 911 Turbo S', detail: '0‑100 km/h in 2.8s', img: 'https://www.stratstone.com/-/media/stratstone/porsche/car-models/inline-images/911/porsche-911-turbo-720x405px.ashx' },
@@ -123,16 +125,9 @@ const About = () => {
         ))}
       </div>
 
-      {/* Footer with logo and theme black‑red glow */}
-      <footer className="footer blackred">
-        <div className="logo">
-          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Porsche_logo.svg/2560px-Porsche_logo.svg.png" alt="Porsche Logo" />
-        </div>
-        <div className="footer‑text">
-          <p>Driven by Passion | Crafted by Design</p>
-          <p>© 2025 Porsche FanSite</p>
-        </div>
-      </footer>
+
+
+      <Footer/>
     </div>
   );
 };
