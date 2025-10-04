@@ -52,9 +52,9 @@ const RangeRoverSection = () => {
 
       {/* Right: Text */}
       <div className="text-content">
-        <h1>PORSCHE  concept  SPORT</h1>
+        <h1>PORSCHE Concept  SPORT</h1>
         <p>The most dynamic Range Rover Sport ever.</p>
-        <button className="btn explore-btn">➝ EXPLORE</button>
+        <button className="btn-explore-btn">➝ EXPLORE</button>
         <div className="build-btn">› BUILD YOUR OWN</div>
       </div>
     </section>

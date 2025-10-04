@@ -2,6 +2,7 @@ import React from "react";
 import "./Models.css";
 import AnimatedStats from "../Components/AnimatedStats";
 import ChargingSection from "../Components/ChargingSection";
+import Footer from "../Components/Footer";
 
 
 const Models = () => {
@@ -18,14 +19,14 @@ const Models = () => {
       and transported by electric vehicles. Explore the most recent impact
       of our products, people and supply chain.
     </p>
-    <button className="explore-btn">Explore Impact</button>
+    <button className="explore-btns">Explore Impact</button>
   </div>
 
 
 
 
         
-<br></br>
+   <br></br>
 
      
 
@@ -34,6 +35,9 @@ const Models = () => {
       
       <div style={{ background: "#000", minHeight: "100vh", padding: 20 }}>
       <AnimatedStats />
+
+
+      <Footer/>
     </div>
 
     

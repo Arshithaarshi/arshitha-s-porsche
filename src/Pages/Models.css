@@ -37,7 +37,7 @@
   color: #f1f1f1;
 }
 
-.explore-btn {
+.explore-btns {
   background: transparent;
   border: 2px solid white;
   color: white;
@@ -47,7 +47,7 @@
   transition: 0.3s ease;
 }
 
-  .explore-btn:hover {
+  .explore-btns:hover {
   background: white;
   color: black;
 }

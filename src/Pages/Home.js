@@ -8,7 +8,7 @@ import Template from "../Components/Template";
 import AutoSlider from "../Components/AutoSlider";
 import PromoCards from "../Components/PromoCards";
 import ExclusiveSection from "../Components/ExclusiveSection";
-import ConstructionSection from "../Components/RangeRoverSection";
+import RangeRoverSection from "../Components/RangeRoverSection";
 import Footer from "../Components/Footer";
 import VelarShowcase from "../Components/VelarShowcase";
 
@@ -98,7 +98,7 @@ const Home = () => {
     
     
     <ExclusiveSection/>
-    <ConstructionSection/>
+    <RangeRoverSection/>
     <VelarShowcase/>
     <Footer/>
     </div>

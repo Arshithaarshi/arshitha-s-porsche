@@ -47,8 +47,9 @@ const VelarShowcase = () => {
 
 
         <div className="video-wrapper">
+
           <video ref={videoRef} autoPlay loop muted playsInline>
-            <source src="/video.mp4" type="video/mp4" />
+            <source src="/video.MP4" type="video/mp4" />
            </video>
 
           <button className="play-btn" onClick={togglePlay}>

@@ -3,17 +3,18 @@
     width: 100%;
     min-height: 100vh;
     background: #fff;
-    padding: 40px;
+    padding: 60px 80px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   
   /* Language Selector */
   .lang-selector {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 30px;
+    right: 40px;
   }
   
   .lang-selector button {
@@ -26,26 +27,29 @@
     cursor: pointer;
   }
   
-  /* Main Content */
+  /* Content Layout */
   .championship-content {
     display: flex;
-    gap: 40px;
-    margin-top: 60px;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
   }
   
   /* Left Image */
   .image-section img {
-  
+    
     opacity: 1;
-   width: 450px;
-    height: 600px;
-    max-width: 600px;
+ 
     border-radius: 12px;
     object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .img{
+    width: 450px;
   }
   
-  /* Right Text Section */
+  /* Right Text */
   .text-section {
     flex: 1;
     display: flex;
@@ -54,29 +58,32 @@
   }
   
   .text-section h1 {
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    color: #000;
   }
   
   .text-section p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #333;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #222;
+    margin-bottom: 40px;
+    max-width: 600px;
   }
   
   .explore-btn {
     background: #000;
     color: #fff;
     border: none;
-    padding: 12px 22px;
+    padding: 14px 26px;
     font-size: 16px;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    transition: 0.3s ease;
   }
   
   .explore-btn:hover {
@@ -84,19 +91,28 @@
   }
   
   /* Responsive */
-  @media (max-width: 900px) {
+  @media (max-width: 1024px) {
     .championship-content {
       flex-direction: column;
-      align-items: center;
+      gap: 50px;
     }
   
     .image-section img {
-      max-width: 100%;
+      width: 90%;
+      height: auto;
     }
   
     .text-section {
       text-align: center;
-      margin-top: 20px;
+    }
+  
+    .text-section h1 {
+      font-size: 48px;
+    }
+  
+    .text-section p {
+      font-size: 15px;
+      margin: 0 auto 30px;
     }
   }
   
