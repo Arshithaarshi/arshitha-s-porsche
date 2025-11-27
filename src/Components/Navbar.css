@@ -1,105 +1,147 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #04010de9;
-    color:white ;
-    font-size: 20px;
-    padding: 40px ;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  .site-title{
-    letter-spacing: 1;
-    line-height: 10px;
-   
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .site-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color:#949ba3;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    color: rgba(173, 26, 26, 0.741);
-    text-decoration: none;
-    font-weight: 700;
-  }
-  
-  .nav-links a:hover {
-    color:#949ba3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #020104e9;
+  color: white;
+  font-size: 20px;
+  padding: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
 
+.site-title {
+  letter-spacing: 1px;
+  line-height: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #949ba3;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.nav-links a {
+  color: rgba(198, 20, 20, 0.864);
+  text-decoration: none;
+  font-weight: 600;
+  font-style: bold;
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: linkSlideDown 1s ease forwards;
+}
+
+/* Add delay for each link for cascading animation */
+.nav-links a:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.nav-links a:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.nav-links a:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #ffffffda;
+  transition: color 0.3s ease;
+}
+
+/* Animation Keyframes */
+@keyframes linkSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
   }
-  
-  /* .nav-links a li::after{
-    content: '';
-    height: 3px;
-    background-color: rgb(193, 34, 34);
-    position :absolute;
-    left: 0;
-    bottom: 10px;
-    transition: 0.5s;
+  60% {
+    opacity: 1;
+    transform: translateY(10px);
   }
-  
-  .nav-links a li:hover::after{
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.slide-link {
+  animation: linkSlideDown 1s ease forwards;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgba(203, 193, 193, 0.841);
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    flex-direction: column;
+    background-color: #0e042c21;
     width: 100%;
-  } */
+    text-align: center;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+    animation: fadeIn 0.6s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
+    display: flex;
   }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: rgba(203, 193, 193, 0.841);
-    transition: 0.3s;
-  }
-  
-  @media (max-width: 768px) {
-    .nav-links {
-      position: absolute;
-      top: 70px;
-      color:rgba(255, 255, 255, 0.841);
-      right: 0;
-      padding: 20px;
-      font-style: bold;
-      font-weight: 4px;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      display: none;
-      
-    }
-  
-    .nav-links.open {
-      display: flex;
-     
-    }
-  
-    .hamburger {
-      display: flex;
-    }
 
+  .nav-links a {
+    padding: 15px 0;
+    font-size: 18px;
   }
-  
+}
+

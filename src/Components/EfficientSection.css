@@ -1,0 +1,142 @@
+.efficient-container {
+    background: #fff;
+    padding: 60px 100px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #111;
+  }
+  
+  .efficient-header {
+    margin-bottom: 40px;
+  }
+  
+  .animate-text {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: slideIn 1.8s ease-out forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-120%);
+      opacity: 0;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .sub-heading {
+    color: #777;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 8px;
+  }
+  
+  .efficient-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  
+  .image-wrapper img {
+    width: 650px;
+    opacity: 1;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .text-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .specs {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .specs .label {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 1px;
+  }
+  
+  .specs h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 8px 0;
+  }
+  
+  .specs span {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .note {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .description h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .description p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .build-btn {
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 14px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .build-btn:hover {
+    background: #222;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1000px) {
+    .efficient-content {
+      flex-direction: column;
+    }
+  
+    .image-wrapper img {
+      width: 100%;
+    }
+  
+    .text-wrapper {
+      margin-top: 20px;
+    }
+  
+    .animate-text {
+      font-size: 36px;
+    }
+  }
+  

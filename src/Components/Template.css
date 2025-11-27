@@ -1,7 +1,7 @@
 .template-section {
    width: 100%;
     padding: 60px 0;
-    background: #fff; /* white background */
+    background: #fff; 
     display: flex;
     justify-content: center;
    
@@ -18,13 +18,18 @@
   
   .template-text {
     flex: 1;
+  
   }
+
+  
   
   .template-text h1 {
+    color: rgba(0, 0, 0, 0.881);
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
-    line-height: 1.2;
+
+    margin-bottom: 15px;
+    line-height: 1.7;
   }
   
   .template-text p {

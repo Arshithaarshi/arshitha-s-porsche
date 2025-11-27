@@ -7,8 +7,8 @@ const modelData = [
     name: "911",
     fuel: "Gasoline",
     description: "Iconic sports car with rear engine: 2 doors, 2+2 seats.",
-    thumbnail: "/911.jpg",   // put this image in public folder
-    video: "/911.mp4",       // put this video in public folder
+    thumbnail: "/911.jpg",   
+    video: "/911.mp4",       
   },
   {
     id: 2,

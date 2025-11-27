@@ -6,8 +6,8 @@ const AutoSlider = () => {
   const images = [
     "https://images.hdqwalls.com/wallpapers/green-porsche-918-du.jpg",
     "https://getwallpapers.com/wallpaper/full/7/f/d/1041163-porsche-wallpaper-2560x1600-for-4k-monitor.jpg",
-    "https://wallpaperswide.com/download/red_porsche_taycan_electric_car-wallpaper-2560x1600.jpg",
-    "https://backiee.com/static/wallpapers/1000x563/382511.jpg"
+    "https://images.hdqwalls.com/wallpapers/grey-porsche-918-spyder-sq.jpg",
+    "https://images3.alphacoders.com/129/1295378.png"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,10 +28,14 @@ const AutoSlider = () => {
       <div className="slider-overlay">
         <h1>
           Your Porsche <br />
+         
           Journey <br />
+        
           Starts Here!!
         </h1>
-        <p>Experience the thrill of driving like never before.</p>
+         <br></br>
+         <br></br>
+
         <div className="btn-group">
           {/* Navigate to Configure Page */}
           <button

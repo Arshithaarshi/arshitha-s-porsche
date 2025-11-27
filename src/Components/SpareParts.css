@@ -1,0 +1,143 @@
+.spareparts-page {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 40px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease;
+  }
+  
+  .card:hover .overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+
+  .card-text {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between text and arrow */
+  }
+  
+  .card-text .arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card.hovered .arrow {
+    transform: translateX(5px); /* Move arrow slightly on hover */
+  }
+
+
+
+
+  
+  .card.hovered {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card.hovered img {
+    transform: scale(1.1);
+  }
+  
+  .card.hovered .overlay {
+    opacity: 1;
+  }
+  
+  .card-text {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .info-box {
+    margin: 30px auto;
+    max-width: 500px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .info-box p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .info-box button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .info-box button:hover {
+    background: #444;
+  }

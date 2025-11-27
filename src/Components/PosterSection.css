@@ -1,0 +1,123 @@
+.poster-section {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* === TOP POSTER CONTENT === */
+  .poster-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 80px 100px;
+    flex-wrap: wrap;
+  }
+  
+  .poster-image {
+    flex: 1 1 400px;
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+  }
+  
+  .poster-image img {
+    width: 100%;
+    opacity: 1;
+    max-width: 600px;
+    border-radius: 16px;
+    background: #eaeaea;
+  }
+  
+  .poster-text {
+    flex: 1 1 400px;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .poster-text h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .poster-text p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+  
+  .poster-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .poster-btn:hover {
+    background-color: #333;
+  }
+  
+  /* === FOOTER CONTACT BAR === */
+  .poster-footer {
+    background-color: #0c0b0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-card {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 18px 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .footer-card i {
+    font-size: 1.1rem;
+    color: #a8a8a8;
+  }
+  
+  .footer-card:hover {
+    background-color: #333;
+  }
+  
+  /* === RESPONSIVE DESIGN === */
+  @media (max-width: 900px) {
+    .poster-content {
+      flex-direction: column;
+      text-align: center;
+      padding: 60px 40px;
+    }
+  
+    .poster-text {
+      text-align: center;
+    }
+  
+    .poster-footer {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .footer-card {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  

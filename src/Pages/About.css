@@ -1,5 +1,5 @@
 .about-container {
-    background: #0b0a0a; /* deep black base */
+    background: #0b0a0a; 
     color: #eee;
     font-family: Arial, sans-serif;
     padding: 50px 20px;
@@ -7,7 +7,7 @@
   
 
   
-  /* Section 1 */
+ 
   .section.bg-left {
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@
   .section.bg-left .bg-image img {
     width: 50%;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* red glow effect */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); 
   }
   
   .section.bg-left .text-block {
@@ -27,7 +27,7 @@
   
   .section.bg-left .text-block h1 {
     font-size: 3rem;
-    color: #8f8787; /* red highlight */
+    color: #8f8787; 
     margin-bottom: 20px;
     text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.329);
   }
@@ -38,7 +38,7 @@
     color: #ccc;
   }
   
-  /* Section 2: Hover gallery */
+  
   .gallery‑hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -78,7 +78,7 @@
     opacity: 1;
   }
   
-  /* Section 3: Counter + Image */
+
   .counter‑section {
     display: flex;
     align-items: center;
@@ -111,7 +111,7 @@
     transform: scale(1.05);
   }
   
-  /* Section 4: Simple gallery */
+
   .gallery‑simple {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -198,15 +198,18 @@ main {
   height: 100%;
   padding: 2rem;
 }
+
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .number {
   font-weight: bolder;
   font-size: 1.25rem;
 }
+
 .from,
 .to,
 .number,
@@ -222,4 +225,95 @@ img {
   opacity: 0.8;
 }
 
+
+.about-container {
+  padding: 50px 10px;
+  overflow-x: hidden;
+}
+
+
+.section.bg-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.section.bg-left .bg-image,
+.section.bg-left .text-block {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.section.bg-left .bg-image img {
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Desktop (side by side) */
+@media(min-width: 900px) {
+  .section.bg-left .bg-image,
+  .section.bg-left .text-block {
+    flex: 1 1 50%;
+    text-align: left;
+  }
+}
+
+
+.gallery-hover {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+
+.counter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.counter-section img {
+  width: 85%;
+  max-width: 500px;
+}
+
+@media(min-width: 900px) {
+  .counter-section {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+main {
+  height: auto;
+  padding: 40px 0;
+}
+
+.card {
+  width: 95%;
+  max-width: 450px;
+  height: auto;
+}
+
+.Imgslid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Imgslid > div {
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+
+
+.gallery-simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
 

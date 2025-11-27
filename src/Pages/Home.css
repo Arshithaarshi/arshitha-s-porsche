@@ -76,38 +76,104 @@ body, html {
     object-fit: cover; 
     border-radius: 12px;
   }
-  
+   
+
+
+
+  .home2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: #d9d1d1;
+  padding: 80px 100px;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* LEFT TEXT */
+.home2-text {
+  flex: 1 1 50%;
+}
+
+.home2 h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 100;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  color: #d9d1d1f3;
+}
+
+.home2 p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #d9d1d1a6;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* RIGHT IMAGE */
+.home2-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home2-image img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.08);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.home2-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
 
  
   /* src/Pages/Page.css */
 
 
-.home-page h1 {
-  font-size: 3rem;
-  color: #d5001c; /* Porsche red */
-  margin-bottom: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-align: center;
-}
 
 
-.home-page p {
-  font-size: 1.15rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: justify;
-  text-justify: inter-word;
-}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
-  .home-page h1 {
-    font-size: 2rem;
+
+  .home2 {
+    padding: 40px 25px;
+  }
+  .home2 h1 {
+    font-size: 2.3rem;
   }
 
-  .home-page p {
+
+
+  .home2 p {
     font-size: 1rem;
   }
 

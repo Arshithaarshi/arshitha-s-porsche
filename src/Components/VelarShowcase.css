@@ -20,6 +20,12 @@
     font-weight: 700;
     letter-spacing: 1px;
   }
+ 
+   .velar-text button {
+    background-color: #000;
+    color: #fff;
+  }
+ 
   
   .velar-text p {
     margin: 1rem 0;
@@ -27,7 +33,7 @@
     color: #444;
   }
   
-  .explore-btn {
+  /* .explore-btn {
     background: #000000db;
     border: none;
      padding: 8px 16px;
@@ -37,20 +43,25 @@
     display: inline-flex;
     align-items: center;
    gap: 8px;
+  } */
+
+  .explore-btn{
+    background: #000;
   }
-
-
   .explore-btn h2{
-    color:rgb(255, 255, 255);
-    padding:3px;
-    margin:0;
-    font-weight: 200;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-   gap: 8px;
-
-  }
+     background-attachment: black;
+     border: none;
+     padding: 8px 16px;
+     margin: 1rem 0;
+     font-weight: 600;
+     cursor: pointer;
+     display: inline-flex;
+     align-items: center;
+     gap: 8px;
+     padding:3px;
+     margin:0;
+   
+   }
 
   .explore-btn h2:hover{
    color: rgb(156, 25, 25);

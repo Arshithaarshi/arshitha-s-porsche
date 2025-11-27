@@ -10,7 +10,7 @@ const ExclusiveSection = () => {
   const slides = [
     {
       image:
-        "https://images-porsche.imgix.net/-/media/DC37A92C50CB475BBA31EAC32A2E778A_9DA725FB571246EEB0F1AA3BA8FE7F92_017-text-media-content-4-3-1500x1125-2images-0004-gt105696?w=598&q=45&dpr=2&auto=format", // replace with your Porsche image
+        "https://images-porsche.imgix.net/-/media/DC37A92C50CB475BBA31EAC32A2E778A_9DA725FB571246EEB0F1AA3BA8FE7F92_017-text-media-content-4-3-1500x1125-2images-0004-gt105696?w=598&q=45&dpr=2&auto=format",
       title: "Attention to detail.",
       description:
         "The experience and passion of our employees always result in something extraordinary: Vehicles full of personality and character which fully meet our customers’ needs. Their own line often begins as a small line on paper. Which then becomes something great."
@@ -34,37 +34,42 @@ const ExclusiveSection = () => {
   return (
     <div className="exclusive-container">
       <h2 className="exclusive-heading">Committed to exclusivity.</h2>
+      <br></br>
       <p className="exclusive-subtitle">
         Our goal is to make unique customer requests come true to create
         incomparable vehicles. For every type and every model. To turn something
         special into something unique.
       </p>
 
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={50}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 5000 }}
-        className="exclusive-swiper"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="exclusive-slide">
-              <div className="exclusive-image">
-                <img src={slide.image} alt={slide.title} />
+      <div className="exclusive-swiper-wrapper">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 5000 }}
+          className="exclusive-swiper"
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <div className="exclusive-slide">
+                <div className="exclusive-image-wrapper">
+                  <img src={slide.image} alt={slide.title} />
+                </div>
+                <div className="exclusive-text">
+                  <h3>{slide.title}</h3>
+                  <p>{slide.description}</p>
+                </div>
               </div>
-              <div className="exclusive-text">
-                <h3>{slide.title}</h3>
-                <p>{slide.description}</p>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };
 
 export default ExclusiveSection;
+
+
+

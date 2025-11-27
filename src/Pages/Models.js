@@ -4,6 +4,9 @@ import AnimatedStats from "../Components/AnimatedStats";
 import ChargingSection from "../Components/ChargingSection";
 import Footer from "../Components/Footer";
 import MachineSection from "../Components/MachineSection";
+import TeslaSection from "../Components/TeslaSection";
+import PosterSection from "../Components/PosterSection";
+import SpareParts from "../Components/SpareParts";
 
 const Models = () => {
   return (
@@ -38,7 +41,10 @@ const Models = () => {
 
       <MachineSection />
 
-
+       <TeslaSection />
+       <PosterSection />
+      
+        <SpareParts />
       <Footer/>
     </div>
 

@@ -35,7 +35,7 @@ const Home = () => {
 
       <AutoSlider />
 
-     <br></br>
+  
      <section style={{ backgroundColor: "#fff", padding: "2rem 0" }}>
   <PromoCards />
 </section>
@@ -51,20 +51,27 @@ const Home = () => {
         </Slider>
       </div>
 
-    <div>
-       <h1 className='page home-page'>
-            Home of Porsche Motorsport
-            </h1>
-       <p>Dive into the world of Porsche Motorsport, where passion meets precision, and every race is a new story waiting to be told. Whether it’s the endurance challenges of Le Mans, the adrenaline-fueled action of Formula E, or the cutting-edge competition in Esports, our Porsche Motorsport Hub brings you closer to the action than ever before.
-         </p> 
+      <div className="home2">
+      <div className="home2-text">
+        <h1>
+          Home
+          <br />
+          <br />
+          of Porsche
+          <br />
+          <br />
+          Motorsport
+        </h1>
+        <p>
+          Dive into the world of Porsche Motorsport, brings you closer than ever before.
+        </p>
+       
+      </div>
 
-       <p> Follow every lap, every pit stop, and every victory as we take you behind the scenes with the entire Porsche Motorsport Team. From customer racing to the pinnacle of motorsport, this is your ultimate destination to experience the legacy and future of Porsche in racing. Don’t just watch – immerse yourself in the journey.
-          </p> 
-          <br></br>
- 
-  </div>
-   
-
+      <div className="home2-image">
+        <img src="https://configurator.porsche.com/_next/image?url=%2Fmodel-start%2Fimages%2Fpanamera%2Fextcam03.webp&w=1080&q=100" alt="Porsche Motorsport" />
+      </div>
+    </div>
   
 
   <Template /> <br></br> 

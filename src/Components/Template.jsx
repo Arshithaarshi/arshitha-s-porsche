@@ -5,7 +5,7 @@ const Template = () => {
   return (
     <div className="template-section">
       <div className="template-container">
-        {/* Left Text Section */}
+     
         <div className="template-text">
           <h1>The one and always.</h1>
           <p>
@@ -16,7 +16,7 @@ const Template = () => {
           </p>
         </div>
 
-        {/* Right Image Section */}
+        
         <div className="template-image">
           <img
             src="/Porsche.jpg" alt=""

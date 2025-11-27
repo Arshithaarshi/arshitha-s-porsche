@@ -1,0 +1,115 @@
+
+.tesla-section {
+    background-color: #fafafa;
+    text-align: center;
+    color: #000;
+    padding: 80px 60px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* === Header === */
+  .tesla-header {
+    margin-bottom: 40px;
+  }
+  
+  .tesla-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .tesla-header p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* === Image === */
+  .tesla-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 800px;
+  }
+  
+  .tesla-image-wrapper img {
+    width: 100%;
+    opacity: 1;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* === Info Section === */
+  .tesla-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+  }
+  .tesla-info-box {
+    flex: 1 1 250px;
+    max-width: 280px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .tesla-info-box:hover {
+    transform: translateY(-4px);
+    color: #000;
+  }
+  
+  .tesla-info-box.active {
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+    color: #000;
+  }
+  
+  
+  .tesla-info-box {
+    flex: 1 1 250px;
+    max-width: 280px;
+  }
+  
+  .tesla-info-box h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .tesla-info-box p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+
+  .tesla-info-box.active {
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+  }
+  
+
+  @media (max-width: 900px) {
+    .tesla-info {
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .tesla-section {
+      padding: 60px 30px;
+    }
+  
+    .tesla-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tesla-info-box {
+      max-width: 320px;
+    }
+  }
+  
