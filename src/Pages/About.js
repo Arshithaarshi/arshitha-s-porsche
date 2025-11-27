@@ -6,6 +6,8 @@ import Championship from '../Components/Championship';
 import Footer from "../Components/Footer";
 import EfficientSection from '../Components/EfficientSection';
 import TestDriveForm from '../Components/TestDriveForm';
+import FindUs from '../Components/FindUs';
+import SupportFooter from '../Components/SupportFooter';
 
 
 
@@ -44,56 +46,15 @@ const About = () => {
 
         <Championship/>
 
+      <FindUs/>
+       
 
-        
-
-     
     
-      {/* Section 2: Hover gallery of 4 images with name + detail on hover */}
-      <div className="gallery‑-hover">
-        {carData.map((car, idx) => (
-          <div className="card" key={idx}>
-            <img src={car.img} alt={car.name} />
-            <div className="overlay">
-              <h3>{car.name}</h3>
-              <p>{car.detail}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      
-    
-
+   <SupportFooter/>
      
 
 
 
-
-      <main>
-        
-    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
-    <div class="card-content">
-      <div class="row">
-        <div class="status">
-          Porsche
-        </div>
-        <div class="logo">
-          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrsDN4CdYzmxGhcrZzhpNFYdGfFesb0M5nCSXPGYDGt3cLH3hMlRFPQVevdyTLNyglGqII6XySeAm8X1RwPyabrpnGBAmNxYX27rFbUVMPsfGZEQ4jYqY0c-64_wsm8Jh9pKJhRBTbYQDdfMfRQyD8Piqky_W2JHEPGxCRXcYcCE6YrBECAKJehJ0_/s1600/logo.png" alt=""/>
-        </div>
-      </div>
-      <div class="chip">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFzeQ0hz39haiHkhSOKnHJCG3v6AynORgBKrj0Zf2FTYMvjAsDAxzqIFZ8DYXbyq_-u_kuZcgg5nRpXxVGp18K15NiCGvVwTv-8QUGdZwJS3sSlhRpqEpZ3RHP7vQCIoKYnd6UFEAzxrhFPR5byjFFR6ld7gWvNCD7g5LF3Y6uhJvgY1_hw8qBCqO6/s1600/chip.png" alt=""/>
-      </div>
-      <div class="number">1234 5678 9012 3456</div>
-      <div class="name">arshi's credit</div>
-      <div class="row">
-        <div class="from">09/21</div>
-        <div class="from">11/25</div>
-      </div>
-    </div>
-  </div>
-</main>
 
 {/*     
       <div className="Imgslid" style={{ display: "flex", gap: "20px" }}>
@@ -112,7 +73,6 @@ const About = () => {
 
 
 
-      {/* Section 4: Another gallery */}
    
 
 

@@ -41,42 +41,8 @@ const ConfigurePage = () => {
       seats: "4",
       transmission: "Automatic"
     },
-    {
-      name: "Cayenne",
-      fuel: ["Petrol", "Hybrid"],
-      image: "https://configurator.porsche.com/_next/image?url=https%3A%2F%2Fiod.prs.porsche.com%2Fiod%2Fimage%2FWW%2F9YADV1%2F1%2FN4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRAFEAPXAZhBUIAB3xFmIAG5p6cDLg6tahANa4RIAL6aqtKJLj1odKAtQg2HAOoALOLgYQIWAIIAbYTaZDRBKMVRtKjdEG3woJHNLZBAAERcATUEQETF-ZiCQYSNWAFcwMxZ2GIBOBJdYgDUARmTUvwDQSFzTegBPAGEIJWsrZKxu2jcE2hkUACYABnGANh80gJIQSYBpASpJgFlajYA5HeXdjuTJgAUZk4AVWOTqgCEV29iAdluAcUnbgBlN293T26nT5UaqnG4gy7rEDVBLAkDjDqvKjjWIAFmS4wAUncMadMRjKgBWDFWC5UPguA58DouZJ8ABiAFU6ZikSA%2BL9ybsAMp0067OncuF8Rno8mw5KolxQ1GxOGozhkkCo%2BnjSVvemSr5K1EARU4ksZmqoqIAGmKQITnryqITMQdCZcABLJQmm45UGYuOEzTgHGb0n30l2et74z0ASShM0xtM9KxKyRmu3DIBmurVntNl2SzxmHpAzxcjyozzeidLa1zjLeudNxNLCQOAA4%2BDiqM3McyO18QyBm9yS-3Ls3ks2AFpKkp3OElWPJEqVL4Lqw5qglccGqguZsFlyVZKxL3JTiTONcTaZkD0zZw%2BmQ5L08dwt7VWtUMMvzYWt6XF-jq8IysKF7QFKhMU4ECnThTFTThFZUT7FYXCVFY7ihFYnQtFYhWSL5f1iAAlZcqAzVNdSdA5dUxC1dV1KjCIrEBdUqKFdXHNlGViA5GVOHjdU4002UqDo4UqQNkkqQixMuJjKisWoyG0HQQEIWhcHCBBGhAGAIHoHAzCyCJklwRh-GEGQ9DMUzclobQgA%3FclientId%3Dicc&w=1080&q=100",
-      desc: "The sports Car With Stylish Design And Everyday Practicality",
-      bodyType: "Body Type ",
-      seats: "4+1",
-      transmission: "Automatic"
-    },
-    {
-      name: "Macan",
-      fuel: ["Electric"],
-      image: "https://configurator.porsche.com/_next/image?url=https%3A%2F%2Fiod.prs.porsche.com%2Fiod%2Fimage%2FWW%2FY1AFL1%2F1%2FN4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRAFEAPXAZhBUIAB3xFmIAG5p6cDLg6tahANa4RIAL6aqtKJLj1odKAtQg2HAOoALOLgYQIWAIIAbYTaZDRBKMVRtKjdEG3woJHNLZBAAERcATUEQETF-ZiCQYSNWAFcwMxZ2GISARhcAMQAZUuTUvwDQSFzTegBPAGEIJWsrZKxu2jcE2hkUACYABnGANh80gJIQSYA5WqpVgCFkyYAVWOTSgHFJw6qALUOVgSpSle3bgAVTp85D3ZuQUoANdZBxjoAdmS41iL3%2BFQAUiCABIgyEPf4ANT%2B4ysAE5knwXH8%2BB0XFiKgSqHwANJHLGPFZYgCKuyxAGVwQAWFzM5LMsEco4VDkASRmHIAqryqMzvp8AKzfDrJSXnR7JGbMpJUGYucEzTh-GYVTVQpVHYkgGZ8z4zSEHNWkgAcSpWsrV3yRyUBM0dIEBLlJrqOmKogJhiMBpM%2BgKFFID33GroS4JtfKFyRtVStIBtu0FVBtSMVVHRksR6JcafRm3B6MhxvRAFlPuikVVkuirPT8%2Bc3lQXDa4V2%2Bf6QC4hX9OJNjZwazGqBVduCjj9kkcYZ8jpC53XFyjF%2BdwXyrJ9IeiaclIZwDzDwZDvuDbQzkqSXFOQKTNp9SUzklUjvsAEpNqg1h0dpUCsVjgjS4zQlQNKjskNKQn8NI0ohP4DjSSKfDSViSskQo0sCVBIh04JInqyRIlBICNk%2BSI-iRmYgGQ2g6CAhC0Lg4QII0IAwBA9A4GYWQRMkuCMP4wgyHoZiibktDaEAA%3FclientId%3Dicc&w=1080&q=100",
-      desc: "The  sports car of compact SUVs",
-      bodyType: "Body Type",
-      seats: "4",
-      transmission: "Automatic"
-    },
-    {
-      name: "Cayenne Black Edition",
-      fuel: ["Power {PS}"],
-      image: "https://configurator.porsche.com/_next/image?url=https%3A%2F%2Fiod.prs.porsche.com%2Fiod%2Fimage%2FWW%2F9YBBN1%2F1%2FN4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRAFEAPXAZhBUIAB3xFmIAG5p6cDLg6tahANa4RIAL6aqtKJLj1odKAtQg2HAOoALOLgYQIWAIIAbYTaZDRBKMVRtKjdEG3woJHNLZBAAERcATUEQETF-ZiCQYSNWAFcwMxZ2GIBOBIAhcoA5AEZk1L8A0Ehc03oATwBhCCVrK2SsHto3BNoZFAAmAAYJgDYfNICSECmAaQEqKYBZOs3a5Kmq8oOABSmDgBVY5Jry1ZvYgHYbgHFzqhqAGQApG7O-64fC4bEA1BLvEATToAVmSE1iEIm32OVAmADVYairIikqiAFpbZJ8Fy7EB8TouIkAMReRO%2BABYiZ9GVQ%2BFVOESAMoQvgAVWerPByXpLhB9IRws4s2FVImwpeVOFn2lVHpAEUOareYrVQANFkgaGPXGG76k6FbSlUaG6zrJWYuCGzTik2ZUp00%2B0ASRBs2%2BgJAs1WJXtVV%2BVFmarlEd1F2Sj1mdqojxc92TLxDyfW8a2mZAj15tOTusx%2BaFVAAHF645XPgAJZIVzlpkAVi4q1t4jslcoQkrfK0gEpolslKw1od4zUgFwVnUzqrJWIw5KcKaDzhbEFUrYQqnA5JUvEQl41IsgF7fE9bA0vC4nvHRkBeqwgs2LqjfThvusQ766iFVmhQdVhcDtVnKEFVjrA1Vm5ZJPjvWIACVPmSNUagDNU61JNUGXQjD0OQvM1TREE1TxAUQF5E5SV5NUqN5XUqLRToITRKlSTRZDzjIbQdBAQhaFwcIECaEAYAgegcDMLIImSXBGH8YQZD0MxFNyWhtCAA%3FclientId%3Dicc&w=1080&q=100",
-      desc: "Open luggage compartment volume ",
-      bodyType: "Sedan, Sport Turismo",
-      seats: "4",
-      transmission: "Automatic"
-    },
-    {
-      name: "Cayenne E-Hybrid",
-      fuel: ["470 PS"],
-      image: "https://configurator.porsche.com/_next/image?url=https%3A%2F%2Fiod.prs.porsche.com%2Fiod%2Fimage%2FWW%2F9YBCT1%2F1%2FN4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRAFEAPXAZhBUIAB3xFmIAG5p6cDLg6tahANa4RIAL6aqtKJLj1odKAtQg2HAOoALOLgYQIWAIIAbYTaZDRBKMVRtKjdEG3woJHNLZBAAERcATUEQETF-ZiCQYSNWAFcwMxZ2GIBOBIAhAGEAFQBGZNS-ANBIXNN6AE9KiCVrK2SsHto3BNoZFAAmAAYJgDYfNICSECnOZKmAaQEqKYBZep2AOQOVw-L1gAUp9eq1qlryjeTa2IB2Z4Bxa-uAGQAJZ6HC7PK4g2LParbEC1BLfEATSrvKgTWJwiYAKXOyIu6OSEwAagBWPFWJEgPguE58SouZJ8ABiHzphzu5IuhzpAGU4XwAKpkviw5IAFhcwpFqJFnFmIvpExFH3pIp%2BMqowoAiqzhbylWqABriqiE9EnQm7AFGvWVZKEgBawKosxccNmnBOs3pLvpuMdHx9IFmAEkobN0eDHRsSslZocOY71fLHXrqslXrNrVRXi4npmPlHM1tU7ymZm9cTM0KqAAOPhYkBVwO85JV-7Nzk5%2BvVVX123dkrlOEldG0qglfE-ZIlKwp0e21kuKsWkAuXknThTEdcXZQ%2Bm7OH0yHJem2uEfWolkAfP5Qv2n3aGy-VROX23PwNWKEmuMgdGcT9-OF0T1OENkJTcNhcbsNnKKENj%2BB8Nm5ZIfg%2BapYgAJQnKhdgmQNknVWp-XVP4TnVE18II-D0PzEB1XxKF1VtMleT4Z9eXVZi9TJfFKjhfFWXxekTnxdC%2BK7EAyG0HQQEIWhcHCBBmhAGAIHoHAzCyCJklwRh-GEGQ9DMHTclobQgA%3FclientId%3Dicc&w=1080&q=100",
-      desc: "Acceleration 0-100 km/h with Sport Chrono Package ",
-      bodyType: "Sedan, Sport Turismo",
-      seats: "4",
-      transmission: "Automatic"
-    }
+   
+    
 
   ];
 

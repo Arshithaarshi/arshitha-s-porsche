@@ -1,0 +1,133 @@
+/* ===== SUPPORT SECTION ===== */
+.support-sections {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f5f5f5;
+    color: rgba(0, 0, 0, 0.765);
+  }
+  
+  .support-sections h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .iframe{
+    align-items: center;
+  }
+  .support-sections p {
+    font-size: 17px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+  }
+  
+  .supports-btn {
+    padding: 12px 28px;
+    border: 1px solid #000;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.25s;
+  }
+  
+  .supports-btn:hover {
+    background: #000;
+    color: #fff;
+  }
+  
+  /* ===== FOOTER SECTION ===== */
+  .footer-sections {
+    background: #33373a;
+    padding: 50px 20px 30px;
+    color: #fff;
+  }
+  
+  /* FLEX container */
+  .footer-tops {
+    display: flex;
+    justify-content: center;     /* CENTER everything horizontally */
+    align-items: flex-start;
+    gap: 80px;                   /* Space between map and links */
+    flex-wrap: wrap;
+  }
+  
+  /* LOCATION + MAP SECTION */
+  .footer-location {
+    text-align: left;           /* Keep text clean */
+    max-width: 350px;
+  }
+  
+  .footer-location p {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+  
+  /* FOOTER LINKS */
+  .footer-links {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links .col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+  
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  
+  /* COPYRIGHT AREA */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+  
+  /* MOBILE FIX */
+  @media (max-width: 900px) {
+    .footer-tops {
+      flex-direction: column;
+      align-items: center;     /* Center map and links on mobile */
+      text-align: center;
+    }
+  
+    .footer-links {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  
+  
+  /* ===== RESPONSIVE ===== */
+  @media(max-width: 900px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media(max-width: 600px) {
+    .footer-links {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer-section iframe {
+      width: 100%;
+    }
+  }
+  

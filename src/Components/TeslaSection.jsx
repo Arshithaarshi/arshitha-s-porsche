@@ -4,28 +4,12 @@ import "./TeslaSection.css";
 const TeslaSection = () => {
   
   const [activeFeature, setActiveFeature] = useState("battery");
-
-  
-  const images = {
+ const images = {
     route: "https://images-porsche.imgix.net/-/media/260761C356AD4731B28E12EF029A1DAF_44F03B00699B4AED8D1542FC919E3011_017-text-media-content_BSZ6314_4-3_1440x1080?w=645&q=45&dpr=2&auto=format", // sample Tesla nav image
     battery: "https://images-porsche.imgix.net/-/media/3BB65DEB91484DEB8FBBEA86A0CFE727_A04AF42A51C64B8B9A7225F77DB341B5_017-text-media-content_4-3_factory-restoration?w=598&q=45&dpr=2&auto=format",
     chargers: "https://images-porsche.imgix.net/-/media/7187CF086377486E86C96800A4518907_B8F8C2367D144058BA6AF4EACC8A0B33_008-extended-teaser_4-3_3840x2880?w=387&q=45&dpr=2&auto=format", // sample Tesla chargers image
   };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  return (
+ return (
     <section className="tesla-section">
       {/* Title + subtitle */}
       <div className="tesla-header">

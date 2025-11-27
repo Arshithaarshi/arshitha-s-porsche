@@ -6,7 +6,9 @@ const EfficientSection = () => {
     <div className="efficient-container">
       {/* Heading */}
       <div className="efficient-header">
-        <h1 className="animate-text">EFFICIENT. EVERYWHERE.</h1>
+        <h1 className="animate-text">EFFICIENT.
+          <br></br>
+           EVERYWHERE.</h1>
         <p className="sub-heading">DIESEL MILD HYBRID</p>
       </div>
 
@@ -15,7 +17,7 @@ const EfficientSection = () => {
         {/* Left - Image */}
         <div className="image-wrapper">
           <img
-            src="https://www.porschechantilly.com/blogs/3738/wp-content/uploads/2025/01/2025-Porsche-911.jpg"
+            src="https://images-porsche.imgix.net/-/media/77E144525089496BAB1871DCBCF86633_D0C966C9AF5043FE96889EC4AD1919BF_4-3_MarketingBanner_50Jahre911?w=387&q=45&dpr=2&auto=format"
             alt="Diesel Mild Hybrid"
           />
         </div>
