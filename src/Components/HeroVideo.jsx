@@ -19,12 +19,12 @@ const HeroVideo = () => {
       <video
         ref={videoRef}
         className="hero-video"
-        src="/race.mp4"
+        src={`${process.env.PUBLIC_URL}/videos/race.mp4`}
         autoPlay
         muted
         loop
+        playsInline
       />
-
 
       {/* Top Left */}
       <div className="top-left">
@@ -52,3 +52,4 @@ const HeroVideo = () => {
 };
 
 export default HeroVideo;
+

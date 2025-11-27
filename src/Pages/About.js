@@ -46,19 +46,11 @@ const About = () => {
 
 
         
-      {/* Section 1: Background image left + Title + paragraph */}
-      <div className="section bg-left">
-        <div className="bg-image">
-          <img src="https://images-porsche.imgix.net/-/media/8F641E0AAC794543850E785094088B5E_102464B1332B4534B44AA6C50263B526_taycan-4-black-edition-front-mobile?fp-x=0.5&fp-y=0.5&w=999&ar=1%3A1&q=45&dpr=2&crop=focalpoint&auto=format" alt="Porsche" />
-        </div>
-        <div className="text-block">
-          <h1>About Porsche</h1>
-          <p>Since 1931, Porsche has blended performance, design, and engineering excellence. We push boundaries to deliver speed, luxury, innovation.</p>
-        </div>
-      </div>
 
+     
+    
       {/* Section 2: Hover gallery of 4 images with name + detail on hover */}
-      <div className="gallery‑hover">
+      <div className="gallery‑-hover">
         {carData.map((car, idx) => (
           <div className="card" key={idx}>
             <img src={car.img} alt={car.name} />
@@ -70,16 +62,7 @@ const About = () => {
         ))}
       </div>
 
-      {/* Section 3: Counting number + image + heading */}
-      <div className="counter‑section">
-        <div className="counter‑text">
-          <h2>0‑100 km/h in</h2>
-          <div className="counter‑number">{accel} km/h</div>
-        </div>
-        <div className="counter‑image">
-          <img src="https://t4.ftcdn.net/jpg/04/42/10/55/360_F_442105555_vUntBOK5N1jXzCOWmBykoebqFtlVXRjC.jpg" alt="Speed visual" />
-        </div>
-      </div>
+      
     
 
      
@@ -130,11 +113,7 @@ const About = () => {
 
 
       {/* Section 4: Another gallery */}
-      <div className="gallery‑simple">
-        {carData.map((car, idx) => (
-          <img className="simple‑img" src={car.img} alt={car.name} key={idx} />
-        ))}
-      </div>
+   
 
 
 

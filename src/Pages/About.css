@@ -46,23 +46,23 @@
     margin-bottom: 60px;
   }
   
-  .gallery‑hover .card {
+  .gallery‑-hover .card {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
   }
   
-  .gallery‑hover .card img {
+  .gallery‑-hover .card img {
     width: 100%;
     display: block;
     transition: transform 0.5s ease;
   }
   
-  .gallery‑hover .card:hover img {
+  .gallery‑-hover .card:hover img {
     transform: scale(1.1);
   }
   
-  .gallery‑hover .card .overlay {
+  .gallery‑-hover .card .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -74,7 +74,7 @@
     transition: opacity 0.5s ease;
   }
   
-  .gallery‑hover .card:hover .overlay {
+  .gallery‑-hover .card:hover .overlay {
     opacity: 1;
   }
   
