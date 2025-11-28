@@ -26,7 +26,7 @@ const ConfigurePage = () => {
     {
       name: "Taycan",
       fuel: ["Electric"],
-      image: "https://configurator.porsche.com/_next/image?url=https%3A%2F%2Fiod.prs.porsche.com%2Fiod%2Fimage%2FIN%2FY1AAI1%2F1%2FN4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRAFEAPXAZhBUIAB3xFmIAG5p6cDLg6tahANa4RIAL6aqtKJLj1odKAtQg2HAOoALOLgYQIWAIIAbYTaZDRBKMVRtKjdEG3woJHNLZBAAERcATUEQETF-ZiCQYSNWAFcwMxZ2GISARhcXAElS5NS-ANBIXNN6AE8AYQglDkqAOWSsLto3BNoZFAAmAAYJgDYfNICSECnemqpVgCFkqYAVWOTSgHFZw4AZAGVD3oEqUt6XQ4AFKefOQ93bkFKADQnkibtADsANiryoEwAUtsIQA1L4TKwATgBAC0YSA%2BJsACzJPjtR5UPgAMSOeMhuKJAGkyUSnv0iQBFXZ4i6UkDYlxfbFg5LYyrcgCqxL5P3ZAFYfu1krNsaiZS5wSBZpx1sriUrZqSZUdCcrKprIQcqLMqQAOGW9SEygBK0pNP1hySBswAEs6XFTna69UCqV8gQBZFFUIGC2kgIF-Z0JJVmyosqhms56s27U5J2ERpHivVI2ZTEVUJGbJVIyF5wNfJGwr3FqyJkBI1HvKguM32kAVZKcKZ6ziB-5UTiwpXE3Zj1FKo6-ZJHEMgI6Q6eB9lHWFqo5T5KVM3yqiVWELypWJWQpGtkCQ11nn5K81XKhUlxDkBUzZfKmu8XJKkXJVnEc%2Bw2mcySBqU1pUL0p7JIyUKwb2sGQj%2BVCMoyaqMjaFqofCySCryVCCk8C6wu0SqwhqySwmcr6wja5FWD%2BZDaDoICELQuDhAgDQgDAED0DgZhZBEyS4Iw-jCDIehmGJuS0NoQA%3FclientId%3Dicc&w=1080&q=100",
+      image: "https://images-porsche.imgix.net/-/media/F37C21DB85FB4547A771546059EAE61B_04ACE8C7900149B6A13080AB1A0EBC9C_00X_Easy-Model-Selector_04_CL16Z05IX0001_1_GL_5_175_rgb?w=1200&q=45&crop=faces%2Centropy%2Cedges&auto=format",
       desc: "The pure expression of an electric sports car",
       bodyType: "Sedan, Cross Turismo",
       seats: "4",

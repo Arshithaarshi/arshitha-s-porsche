@@ -7,6 +7,7 @@ import MachineSection from "../Components/MachineSection";
 import TeslaSection from "../Components/TeslaSection";
 import PosterSection from "../Components/PosterSection";
 import SpareParts from "../Components/SpareParts";
+import New from "../Components/New"
 
 const Models = () => {
   return (
@@ -45,6 +46,7 @@ const Models = () => {
        <PosterSection />
       
         <SpareParts />
+        <New/>
       <Footer/>
     </div>
 

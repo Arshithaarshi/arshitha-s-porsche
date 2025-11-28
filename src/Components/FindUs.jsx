@@ -77,7 +77,6 @@ const FindUs = () => {
             <h3>Switzerland</h3>
             <a href="#">Stores and Galleries</a>
             <a href="#">Self Serve Demo Drive</a>
-         
             <a href="#">Destination Charging</a>
           </div>
 

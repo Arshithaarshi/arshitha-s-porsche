@@ -19,7 +19,7 @@ const Template = () => {
         
         <div className="template-image">
           <img
-            src="/Porsche.jpg" alt=""
+            src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/support-getting-started.jpg" alt=""
           />
           <img src="/Porsche2.png" alt=""/>
         </div>
