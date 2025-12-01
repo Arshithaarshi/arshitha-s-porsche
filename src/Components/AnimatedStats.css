@@ -10,7 +10,7 @@
   max-width: 1100px;
   margin: 40px auto;
   display: flex;
-  flex-wrap: wrap;         /* ➕ allows 4 rings to wrap clean */
+  flex-wrap: wrap;
   gap: 38px;
   justify-content: center;
   align-items: start;
@@ -20,7 +20,7 @@
   padding-top: 40px;
 }
 
-/* full-width card rule remains (for future 3rd stat) */
+/* full-width card rule remains */
 .stat-card--wide {
   grid-column: 1 / -1;
   justify-self: center;
@@ -33,10 +33,10 @@
   align-items: center;
 }
 
-/* OUTER ring */
+/* OUTER ring —↓↓ reduced size */
 .ring-outer {
-  width: 190px;
-  height: 190px;
+  width: 160px;   /* was 190px */
+  height: 160px;  /* was 190px */
   border-radius: 70%;
   display: flex;
   align-items: center;
@@ -46,10 +46,10 @@
     0 8px 30px rgba(0,0,0,0.6);
 }
 
-/* inner animated ring */
+/* inner animated ring —↓↓ reduced size */
 .ring {
-  width: 165px;
-  height: 165px;
+  width: 140px;    /* was 165px */
+  height: 140px;   /* was 165px */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -89,7 +89,7 @@
 }
 
 .count {
-  font-size: 38px;
+  font-size: 32px;   /* auto smaller to fit ring better */
   font-weight: 700;
   color: var(--text);
   letter-spacing: 0.6px;
@@ -97,10 +97,10 @@
 }
 
 .stat-label {
-  margin-top: 28px;
+  margin-top: 24px;
   text-align: center;
   font-size: 14px;
-  max-width: 280px;
+  max-width: 260px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.25;
