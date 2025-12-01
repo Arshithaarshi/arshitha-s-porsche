@@ -12,8 +12,9 @@
   
   .machine-image-wrapper {
     width: 90%;
+
     max-width: 1200px;
-    border-radius: 12px;
+    border-radius: 13px;
     overflow: hidden;
   }
   

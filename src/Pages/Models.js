@@ -39,7 +39,8 @@ const Models = () => {
       
       <div style={{ background: "#000", minHeight: "100vh", padding: 20 }}>
       <AnimatedStats />
-
+      
+      
       <MachineSection />
 
        <TeslaSection />

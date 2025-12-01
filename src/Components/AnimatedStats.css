@@ -6,51 +6,47 @@
 
 /* container */
 .stats-wrapper {
-  width: 100;
+  width: 100%;
   max-width: 1100px;
   margin: 40px auto;
-  display:flex ;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 48px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;         /* ➕ allows 4 rings to wrap clean */
+  gap: 38px;
+  justify-content: center;
   align-items: start;
   color: var(--text);
   font-family: "Arial", "Helvetica", sans-serif;
   background: var(--bg);
-  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
-/* make the 3rd stat take full width under the two (centered) */
+/* full-width card rule remains (for future 3rd stat) */
 .stat-card--wide {
   grid-column: 1 / -1;
   justify-self: center;
 }
 
-/* stat card container */
+/* stat card */
 .stat-card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* OUTER ring (thicker, static) */
+/* OUTER ring */
 .ring-outer {
   width: 190px;
   height: 190px;
-
   border-radius: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
-
-
-  /* the bold outer circle - creates the "thicker" look */
   box-shadow:
-    0 0 0 6px rgba(173,20,20,0.85),  /* thick outer stroke */
-    0 8px 30px rgba(0,0,0,0.6);       /* subtle outer shadow */
+    0 0 0 6px rgba(173,20,20,0.85),
+    0 8px 30px rgba(0,0,0,0.6);
 }
 
-/* inner animated ring (fits inside outer) */
+/* inner animated ring */
 .ring {
   width: 165px;
   height: 165px;
@@ -58,16 +54,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* animated conic is applied inline from JSX */
   box-shadow:
-    inset 0 0 25px rgba(213,0,28,0.18), /* inner subtle red glow */
+    inset 0 0 25px rgba(213,0,28,0.18),
     inset 0 -10px 30px rgba(0,0,0,0.55);
   transition: transform 300ms ease, filter 300ms ease;
   position: relative;
   overflow: hidden;
 }
 
-/* soft white highlight arc (pseudo element) */
 .ring::after {
   content: "";
   position: absolute;
@@ -83,7 +77,6 @@
   opacity: 0.65;
 }
 
-/* inner "hole" */
 .ring-inner {
   width: calc(160% - 24px);
   height: calc(160% - 24px);
@@ -95,7 +88,6 @@
   position: relative;
 }
 
-/* number */
 .count {
   font-size: 38px;
   font-weight: 700;
@@ -104,23 +96,21 @@
   display: block;
 }
 
-/* label */
 .stat-label {
-  margin-top: 18px;
+  margin-top: 28px;
   text-align: center;
   font-size: 14px;
   max-width: 280px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.25;
-  padding: 0 8px;
 }
 
-/* hover effect */
 .ring:hover {
   transform: scale(1.03);
   filter: drop-shadow(0 6px 22px rgba(213, 0, 28, 0.25));
 }
+
 
 
 

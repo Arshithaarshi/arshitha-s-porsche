@@ -4,9 +4,8 @@ import "./AnimatedStats.css";
 const statsData = [
   { value: 140, label: "MPH TOP SPEED (FASTEST IN CUV SEGMENT)" },
   { value: 268, label: "MAXIMUM HORSEPOWER" },
- 
-  { value: 295, label: "MAXIMUM LB-FT OF TORQUE" },
-  { value: 3.9, label: "SECONDS 0-60 MPH" } // new fourth stat
+  { value: 295, label: "MAXIMUM LB-FT OF TORQUE" },      // ➕ Added
+  { value: 3.9, label: "SECONDS 0–60 MPH" }               // ➕ Added
 ];
 
 function easeOutCubic(t) {
@@ -30,12 +29,11 @@ export default function AnimatedStats({ duration = 1400 }) {
 
       const nextCounts = statsData.map((s) =>
         typeof s.value === "number" && s.value % 1 !== 0
-          ? // keep one decimal for floats like 3.9
-            Math.round(s.value * eased * 10) / 10
+          ? Math.round(s.value * eased * 10) / 10
           : Math.round(s.value * eased)
       );
 
-      const nextAngles = statsData.map((s, idx) => 360 * eased);
+      const nextAngles = statsData.map(() => 360 * eased);
 
       setCounts(nextCounts);
       setAngles(nextAngles);
@@ -49,6 +47,7 @@ export default function AnimatedStats({ duration = 1400 }) {
     }
 
     rafRef.current = requestAnimationFrame(step);
+
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
@@ -57,11 +56,9 @@ export default function AnimatedStats({ duration = 1400 }) {
   return (
     <div className="stats-wrapper">
       {statsData.map((s, i) => {
-        // decide which item spans full width (3rd item in original screenshot)
         const wideClass = i === 2 ? "stat-card--wide" : "";
         return (
           <div key={i} className={`stat-card ${wideClass}`}>
-            {/* outer thicker ring wrapper */}
             <div className="ring-outer">
               <div
                 className="ring"
@@ -73,16 +70,9 @@ export default function AnimatedStats({ duration = 1400 }) {
                   )`
                 }}
               >
-               <div className="ring-inner">
-  {/* 3rd Ring */}
-  <div className="ring-third"></div>
-
-  {/* 4th Ring */}
-  <div className="ring-fourth"></div>
-
-  <span className="count">{counts[i]}</span>
-</div>
-
+                <div className="ring-inner">
+                  <span className="count">{counts[i]}</span>
+                </div>
               </div>
             </div>
 
@@ -93,5 +83,6 @@ export default function AnimatedStats({ duration = 1400 }) {
     </div>
   );
 }
+
 
 

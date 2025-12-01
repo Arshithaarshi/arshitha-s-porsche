@@ -19,7 +19,7 @@ const SpareParts = () => {
             alt="Porsche Shop"
           />
           <div className="overlay"></div>
-          <div className="card-text">Porsche Shop</div>
+          <div className="card-text"></div>
         </div>
 
         {/* Card 2 */}
@@ -29,7 +29,7 @@ const SpareParts = () => {
             alt="Parts Lists"
           />
           <div className="overlay"></div>
-          <div className="card-text">Parts lists</div>
+          <div className="card-text"></div>
         </div>
 
         {/* Card 3 */}
@@ -39,7 +39,7 @@ const SpareParts = () => {
             alt="Porsche Parts Explorer"
           />
           <div className="overlay"></div>
-          <div className="card-text">Porsche Parts Explorer</div>
+          <div className="card-text"></div>
         </div>
       </div>
 
