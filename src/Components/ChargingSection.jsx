@@ -21,7 +21,7 @@ const ChargingSection = () => {
           <div className="card-text">
             <h3>While You Sleep</h3>
             <p>
-              <a href="/">Plug in at home</a> or at nearby public chargers.
+              Plug in at home or at nearby public chargers.
             </p>
           </div>
         </div>
@@ -31,7 +31,7 @@ const ChargingSection = () => {
           <div className="card-text">
             <h3>During the Day</h3>
             <p>
-              Charge at a <a href="/">local Supercharger</a>
+              Charge at a  local Supercharger
                 <br></br>
                or at your workplace.
             </p>
@@ -44,7 +44,7 @@ const ChargingSection = () => {
             <h3>On Road Trips</h3>
             <p>
               Recharge at Superchargers on the way or at{" "}
-              <a href="/">your destination</a>.
+               your destination
               <br></br>
             </p>
           </div>

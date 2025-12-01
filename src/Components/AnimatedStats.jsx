@@ -4,7 +4,9 @@ import "./AnimatedStats.css";
 const statsData = [
   { value: 140, label: "MPH TOP SPEED (FASTEST IN CUV SEGMENT)" },
   { value: 268, label: "MAXIMUM HORSEPOWER" },
-  { value: 295, label: "MAXIMUM LB-FT OF TORQUE" }
+ 
+  { value: 295, label: "MAXIMUM LB-FT OF TORQUE" },
+  { value: 3.9, label: "SECONDS 0-60 MPH" } // new fourth stat
 ];
 
 function easeOutCubic(t) {
@@ -26,8 +28,14 @@ export default function AnimatedStats({ duration = 1400 }) {
       const t = Math.min(1, elapsed / duration);
       const eased = easeOutCubic(t);
 
-      const nextCounts = statsData.map((s) => Math.round(s.value * eased));
-      const nextAngles = statsData.map((s) => 360 * eased);
+      const nextCounts = statsData.map((s) =>
+        typeof s.value === "number" && s.value % 1 !== 0
+          ? // keep one decimal for floats like 3.9
+            Math.round(s.value * eased * 10) / 10
+          : Math.round(s.value * eased)
+      );
+
+      const nextAngles = statsData.map((s, idx) => 360 * eased);
 
       setCounts(nextCounts);
       setAngles(nextAngles);
@@ -35,7 +43,6 @@ export default function AnimatedStats({ duration = 1400 }) {
       if (t < 1) {
         rafRef.current = requestAnimationFrame(step);
       } else {
-        // make sure final values are exact
         setCounts(statsData.map((s) => s.value));
         setAngles(statsData.map(() => 360));
       }
@@ -49,26 +56,42 @@ export default function AnimatedStats({ duration = 1400 }) {
 
   return (
     <div className="stats-wrapper">
-      {statsData.map((s, i) => (
-        <div
-          key={i}
-          className={`stat-card ${i === 2 ? "stat-card--wide" : ""}`}
-        >
-          <div
-            className="ring"
-            style={{
-              background: `conic-gradient(var(--ring-color) ${angles[i]}deg, rgba(255,255,255,0.06) ${angles[i]}deg)`
-            }}
-          >
-            <div className="ring-inner">
-              <span className="count">{counts[i]}</span>
-            </div>
-          </div>
+      {statsData.map((s, i) => {
+        // decide which item spans full width (3rd item in original screenshot)
+        const wideClass = i === 2 ? "stat-card--wide" : "";
+        return (
+          <div key={i} className={`stat-card ${wideClass}`}>
+            {/* outer thicker ring wrapper */}
+            <div className="ring-outer">
+              <div
+                className="ring"
+                style={{
+                  background: `conic-gradient(
+                    rgba(213,0,28,1) ${angles[i]}deg,
+                    rgba(213,0,28,0.15) ${angles[i]}deg 380deg,
+                    rgba(255,255,255,0.06) 380deg
+                  )`
+                }}
+              >
+               <div className="ring-inner">
+  {/* 3rd Ring */}
+  <div className="ring-third"></div>
 
-          <div className="stat-label">{s.label}</div>
-        </div>
-      ))}
+  {/* 4th Ring */}
+  <div className="ring-fourth"></div>
+
+  <span className="count">{counts[i]}</span>
+</div>
+
+              </div>
+            </div>
+
+            <div className="stat-label">{s.label}</div>
+          </div>
+        );
+      })}
     </div>
   );
 }
+
 

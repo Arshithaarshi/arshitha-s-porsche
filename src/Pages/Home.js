@@ -13,12 +13,6 @@ import Footer from "../Components/Footer";
 import VelarShowcase from "../Components/VelarShowcase";
 
 
-
-
-
-
-
-
 const Home = () => {
   const sliderSettings = {
     dots: true,
